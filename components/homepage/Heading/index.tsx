@@ -17,14 +17,14 @@ const Heading = () => {
     const isDesktop = useMediaQuery("(min-width: 1140px)")
 
     return (
-        <div className="relative w-full pt-32 md:pt-44 xl:pt-80 px-4 md:px-8 xl:px-0 xl:pr-10 bg-primary overflow-hidden">
-            <div className="relative flex xs:flex-col xl:flex-row justify-between items-center gap-x-14 z-20">
+        <div className="relative w-full pt-32 md:pt-44 2xl:pt-80 px-4 md:px-8 2xl:px-0 2xl:pr-10 bg-primary overflow-hidden">
+            <div className="relative flex xs:flex-col 2xl:flex-row justify-between items-center gap-x-14 z-20">
                 <motion.div
                     variants={fadeIn("right", 2.5)}
                     initial="hidden"
                     animate="show"
                     exit="hidden"
-                    className="mt-12 md:mt-0 -ml-44 xl:ml-0 md:relative top-7 md:top-[70px] xl:top-7 order-2 xl:order-none"
+                    className="mt-12 md:mt-0 -ml-44 2xl:ml-0 md:relative top-7 md:top-[70px] 2xl:top-7 order-2 2xl:order-none"
                 >
                     {isMobile && (
                         <FirstHeadingBackground width="400" height="200" />
@@ -36,8 +36,8 @@ const Heading = () => {
                         <FirstHeadingBackground width="620" height="360" />
                     )}
                 </motion.div>
-                <div className="order-1 xl:order-none xl:relative -top-28 flex flex-col gap-y-12">
-                    <div className="xl:w-[65vh] text-center">
+                <div className="order-1 2xl:order-none 2xl:relative -top-28 flex flex-col gap-y-12">
+                    <div className="2xl:w-[65vh] text-center">
                         <motion.h2
                             variants={fadeIn("down", 0.5)}
                             initial="hidden"
@@ -57,7 +57,7 @@ const Heading = () => {
                             …onde você possa pertencer a um clube escolar, um grupo de gamers, ou uma comunidade artística mundial. Onde você e alguns amigos possam passar um tempo juntos. Um lugar que torna fácil conversar todos os dias e socializar com mais frequência.
                         </motion.p>
                     </div>
-                    <div className="flex xs:flex-col md:flex-row gap-y-4 xl:gap-y-0 items-start md:items-center md:justify-center gap-x-6">
+                    <div className="flex xs:flex-col md:flex-row gap-y-4 2xl:gap-y-0 items-start md:items-center md:justify-center gap-x-6">
                         <motion.div
                             variants={fadeIn("right", 1.5)}
                             initial="hidden"
@@ -120,7 +120,7 @@ const Heading = () => {
                     initial="hidden"
                     animate="show"
                     exit="hidden"
-                    className="hidden xl:block relative top-2"
+                    className="hidden 2xl:block relative top-2"
                 >
                     <ThirdHeadingBackground width="600" height="352" />
                 </motion.div>
@@ -130,7 +130,7 @@ const Heading = () => {
                 initial="hidden"
                 animate="show"
                 exit="hidden"
-                className="hidden md:block absolute -bottom-[70px] md:-bottom-[210px] xl:-bottom-[70px] animate-bounce"
+                className="hidden md:block absolute -bottom-[70px] md:-bottom-[210px] 2xl:-bottom-[70px] animate-bounce"
             >
                 <SecondHeadingBackground width="100%" height="550" />
             </motion.div>
