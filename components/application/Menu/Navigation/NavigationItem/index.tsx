@@ -28,16 +28,19 @@ const NavigationItem = ({ id, imageUrl, name }: NavigationItemProps) => {
                 onClick={onClick}
                 className="group relative flex items-center"
             >
-                <div className={cn(
-                    "absolute left-0 bg-black dark:bg-white rounded-r-full transition-all w-[4px] h-[14px]",
-                    params?.serverId !== id && "group-hover:h-[20px]",
-                    params?.serverId === id ? "h-full group-hover:h-[36px]" : "h-[8px]",
-
-                )} />
-                <div className={cn(
-                    "group relative flex mx-3 w-[48px] h-[48px] rounded-[24px] group-hover:rounded-[16px] overflow-hidden transition-all",
-                    params?.serverId === id && "bg-white/10 text-primary rounded-[16px]"
-                )}>
+                <div
+                    className={cn(
+                        "absolute left-0 bg-black dark:bg-white rounded-r-full transition-all w-[4px] h-[14px]",
+                        params?.serverId !== id && "group-hover:h-[20px]",
+                        params?.serverId === id ? "h-full group-hover:h-[36px]" : "h-[8px]",
+                    )}
+                />
+                <div
+                    className={cn(
+                        "group relative flex mx-3 w-[48px] h-[48px] rounded-[24px] group-hover:rounded-[16px] overflow-hidden transition-all",
+                        params?.serverId === id && "bg-white/10 text-primary rounded-[16px]"
+                    )}
+                >
                     <Image
                         fill
                         src={imageUrl}
